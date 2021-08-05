@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+	<!--basics-->
+	<meta charset="utf-8" />
+    <title>lines ;)</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+
+
+	<!--css-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+
+	<!--script-->
+	<script>
+		function randomString() { 
+			var items = ["random ", "another random", "lotus", "lopem"];
+			var item =  items[Math.floor(Math.random() * items.length)];
+			var randomstring = '';  
+
+			document.getElementById("field").innerHTML = item;  
+		}
+		</script>
+	<!--body-->
+	<body>
+
+		<div class="bg-image p-5 text-center rounded text-white" style="background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/003.jpg'); height:100vh;">
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<h1 class="display-2">Welcome to my experimental site</h1>
+				<p id="field" class="lead">#todo - change it to somethin that can be altered dynamically</p>
+				<hr class="my-2">
+				
+				<p class="lead">
+					<a class="btn btn-primary btn-lg"  role="button" onclick="randomString();">randomize</a>
+				</p>
+			</div>
+		</div>
+		</div>
+		<!--JS-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+	</body>	
+</html>
